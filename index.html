@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/49117ff12f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="flex_container">
+        <!-- header  -->
+        <header>
+            <img src="images/header_logo.svg" alt="logo">
+            <form class="form1" name="form1">
+                <input class="header_search_bar small_txt_size" type="search" name="search" placeholder="What are you looking for?">
+                <input class="search_icon " type="image" name="search" src="images/search_icon.svg">
+            </form>
+            <div class="header_buttons">
+                <a href=""> <button class="log_in small_txt_size">LOG IN</button> </a>
+                <a href=""> <button class="cart"> <img src="images/cart_icon.svg" alt="logo"></button> </a> 
+            </div>
+        </header>
+        <!-- section  -->
+        <section class="section1"> 
+            <nav>
+                <ul class="navigation_list medium_txt_size color_white">
+                    <li>
+                        <a class="medium_txt_size color_white" href="">HOME</a>
+                    </li>
+                    <li>
+                        <a class="medium_txt_size color_white"  href="">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="medium_txt_size color_white"  href="">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="medium_txt_size color_white"  href="">PLANT CARE</a>
+                    </li>
+                    <li>
+                        <a class=" last_li medium_txt_size color_white"  href="">CONTACT US</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- section2  -->
+        <section class="section2"> 
+            <div class="contact_info">
+                <h2 class="large_txt_size">CONTACT US</h2>
+                <form class="form2" name="form2"> 
+                    <div class="NameAndEmail">
+                        <input type="text" name="Name" placeholder="Name" class="small_txt_size NameAndEmail_info">
+                        <input type="email" name="Email" placeholder="Email" class="small_txt_size NameAndEmail_info">
+                    </div>
+                    <div class="Choice_Select_Info">
+                        <label class="small_txt_size color_white" for="Choice">Is your question about an existing order?</label>
+                       <select name="choice" id="Choice">
+                        <option value="" selected disabled> </option>
+                        <option class="choice_option1" value="">YES</option>
+                        <option class="choice_option2" value="">NO</option>
+                       </select>
+                    </div>
+                    <div class="radio_choice">
+                        <div class="radio_wraper">
+                            <input type="radio" id="DoNotReceive" name="radio_wraper_choice">
+                            <label class="small_txt_size radio_labels" for="DoNotReceive">I did not receive my order</label>
+                        </div>
+                        <div class="radio_wraper">
+                            <input type="radio" id="Damaged" name="radio_wraper_choice">
+                            <label class="small_txt_size radio_labels" for="Damaged">My order is incorrect or arrived damaged</label>
+                        </div>
+                        <div class="radio_wraper">
+                            <input type="radio" id="Cancel" name="radio_wraper_choice">
+                            <label class="small_txt_size radio_labels" for="Cancel">Cancel my order</label>
+                        </div>
+                        <div class="radio_wraper">
+                            <input type="radio" id="Change" name="radio_wraper_choice">
+                            <label class="small_txt_size radio_labels" for="Change">Change my shipping address</label>
+                        </div>
+                        
+                    </div>
+                    <div class="txt_area_message">
+                        <label class="small_txt_size color_white" for="massage">Please provide more details below.</label>
+                        <textarea class="small_txt_size textarea" name="message" id="massage" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="check_box">
+                        <input class="checkbox" type="checkbox" name="receive" id="Receive">
+                        <label class="small_txt_size color_white" for="Receive">I want to receive the newsletter</label>
+                    </div>
+                    <input class="send_button small_txt_size color_white" type="submit" value="SEND">
+                </form>
+            </div>
+
+        </section>
+        <!-- footer  -->
+        <footer>
+            <div class="footer_media"> 
+                <h5 class="footer_media_title small_txt_size color_white">Follow us</h5>
+                <div class="footer_media_links">
+                    <a href="https://ru-ru.facebook.com/" target="_blank"><img src="images/facebook_logo.svg" alt="logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram_logo.svg" alt="logo"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twiter_logo.svg" alt="logo"></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterest_logo.svg" alt="logo"></a>
+                </div>
+            </div>
+            <div class="footer_contact"> 
+                <h5 class="footer_contact_title small_txt_size color_white">Contact us</h5>
+                <ul class="footer_contact_ul">
+                    <li class="footer_contact_list">
+                        <a href="https://www.google.com/maps/place/%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%90%E1%83%9C%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98/@41.7092762,44.7974673,17z/data=!4m6!3m5!1s0x40440d27c088e619:0x85df45e4dde9bf15!8m2!3d41.7098214!4d44.7975361!16s%2Fm%2F0gtwgb0?entry=ttu" target="_blank"><img src="images/addres_logo.svg" alt="logo">
+                        </a>
+                        <p class="small_txt_size color_white">New York, 94 Brodway</p>
+                    </li>
+                    <li class="footer_contact_list">
+                        <a href="tel: +555 67 88 00"><img src="images/phone_logo.svg" alt="logo">
+                        </a>
+                        <p class="small_txt_size color_white">+555 67 88 00</p>
+                    </li>
+                    <li class="footer_contact_list">
+                        <a href="mailto:plant@gmail.com"><img src="images/mail_logo.svg" alt="logo">
+                        </a>
+                        <p class="small_txt_size color_white">plant@gmail.com</p>
+                    </li>
+                </ul>
+
+            </div>
+            <h6>Copyright © 2023 House Plant Shop.</h6>
+        </footer>
+    </div>
+
+</body>
+
+</html>
